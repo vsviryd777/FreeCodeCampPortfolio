@@ -1,0 +1,295 @@
+* {
+	box-sizing: border-box;
+}
+ #step-one,#step-two, #step-three,#step-four {
+    background: linear-gradient(to right, #00FFF6, #C0EEF2);
+  }
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+h4{
+  color: black;
+}
+body {
+    background-color: #DEFCF9;
+    font-family: 'Lato', sans-serif;
+}
+
+main {
+  margin-top: 30px; 
+}
+
+img {
+	max-width: 100%;
+}
+
+h2 {
+  text-align: center;
+}
+
+p {
+  line-height: 1.5;
+}
+
+a {
+  color: #06c;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.row {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.col {
+	padding-right: 1em;
+	padding-left: 1em;
+}
+
+#header {
+  position: fixed; 
+  top: 0; 
+  padding-top: 5px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #7DE5ED;
+}
+
+#header-logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+#header-img {
+  width: 35px;
+  margin-right: 6px;
+}
+
+#header-logo-name {
+  font-size: 1.5em;
+  margin: 0;
+}
+
+#nav-bar {
+  width: 100%;
+  padding-bottom: 3px;
+}
+
+#nav-bar ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+#nav-bar li {
+  text-align: center;
+  padding-bottom: 10px;
+}
+
+#nav-bar a {
+	text-align: center;
+  display: block;
+  padding-top: 6px;
+  text-decoration: none;
+  color: black;
+}
+
+#nav-bar a:hover {
+  text-decoration: underline;
+}
+
+main {
+  margin-top: 140px;
+}
+
+#banner {
+  padding-top: 3em;
+  padding-bottom: 3em;
+  background-image: url(https://th.bing.com/th/id/R.fdc4c8dcde0e72a1cdd95e202dba9312?rik=NCucqZe6z4TvaA&pid=ImgRaw&r=0);
+     
+}
+
+#banner h4 {
+  text-align: center;
+  color: white;
+  margin-bottom: 0;
+  font-size: 1.25em;
+  line-height: 1.5;
+  text-shadow: 2px 2px 1px #222;
+}
+
+
+
+#mailing-list {
+  text-align: center;
+  max-width: 350px;
+  padding: 20px 40px;
+  border: black 1px solid;
+}
+
+form {
+  margin-top: 10px;
+}
+
+input {
+  display: block;
+}
+
+#email {
+  border: none;
+  font-size: 16px;
+  height: auto;
+  margin: 0;
+  padding: 15px;
+  width: 100%;
+  background-color: #f6f8f8;
+  color: #464747;
+  margin-bottom: 10px;
+}
+
+#submit {
+  padding: 11px 39px 10px 39px;
+  color: #8BF5FA ;
+  background-color:#205E61;
+  font-size: 18px;
+  text-align: center;
+  border-radius: 5px;
+  width: 100%;
+  border: 1px solid #3d8854;
+  margin-bottom: 10px;
+}
+
+#contact-methods {
+  margin: 0 auto;
+  display: flex;
+  max-width: 550px;
+  justify-content: space-around;
+  align-items: center;
+}
+
+footer {
+  text-align: center;
+}
+
+@media (min-width: 769px) {
+  section {
+    width: 90%;
+    margin: 0 auto;
+  }
+
+  #header-logo-name {
+    font-size: 2em;
+  }
+
+  #header-img {
+    width: 50px;
+  }
+
+  #nav-bar ul {
+    padding-top: 10px;
+    padding-bottom: 5px;
+    display: flex;
+    justify-content: center;
+  }
+
+  #nav-bar li {
+    padding-left: 25px;
+    padding-right: 25px;
+    font-size: 1.15em;
+  }
+
+  main {
+    margin: 110px auto 10px auto;
+  }
+
+ 
+
+  #banner h4 {
+    font-size: 1.75em;
+  }
+
+  #process .row {
+    align-items: stretch;
+  }
+
+  #process .col {
+    flex: 1 50%;
+  }
+
+  #mailing-list {
+    max-width: 550px;
+  }
+}
+
+@media (min-width: 1025px) {
+  section {
+    width: 75%;
+		max-width: 1150px;
+  }
+
+  .row {
+    flex-direction: row;
+  }
+
+  #header {
+    flex-direction: row;
+    justify-content: space-around;
+    padding-left: 15%;
+    padding-right: 15%;
+    padding-bottom: 10px;
+  }
+
+  #header-logo {
+    justify-content: flex-start;
+  }
+
+  #header-img {
+    width: 75px;
+  }
+
+  #nav-bar ul {
+    justify-content: flex-end;
+  }
+
+  #nav-bar li {
+    font-size: 1.5em;
+  }
+
+  main {
+    margin-top: 90px;
+  }
+
+  #banner .row {
+    justify-content: space-evenly;
+  }
+
+  #about .row {
+    flex-direction: row-reverse;
+  }
+
+  #process .col {
+    flex: 1 25%;
+  }
+
+ 
+  
+   
+
+  #mailing-list {
+    flex-grow: 2;
+    max-width: 50%;
+  }
+}
